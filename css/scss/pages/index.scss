@@ -1,0 +1,16 @@
+.main{
+    .sidebar{
+        background-color: #ffffff13;
+        width: 200px;
+        height: 100%;
+        overflow: auto;
+        color: white;
+        .header{
+            .brand{
+                text-align: center;
+                padding: 20px 10px;
+                font-weight: bold;
+            }
+        }
+    }
+}

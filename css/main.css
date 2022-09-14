@@ -1,6 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+.main .sidebar {
+  background-color: #ffffff13;
+  width: 200px;
+  height: 100%;
+  overflow: auto;
+  color: white; }
+  .main .sidebar .header .brand {
+    text-align: center;
+    padding: 20px 10px;
+    font-weight: bold; }
+
 * {
   outline: none;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #03312E; }
