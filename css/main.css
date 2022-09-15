@@ -1,20 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 .main .sidebar {
-  background-color: #ffffff13;
-  width: 200px;
+  background-color: #ffffff09;
+  width: 250px;
   height: 100%;
   overflow: auto;
   color: white; }
   .main .sidebar .header .brand {
-    text-align: center;
     padding: 20px 10px;
     font-weight: bold; }
+  .main .sidebar ul .active {
+    background-color: #ffffff13; }
+  .main .sidebar ul li.song {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+    .main .sidebar ul li.song:hover {
+      background-color: #ffffff13; }
+    .main .sidebar ul li.song .left {
+      padding: 10px; }
+      .main .sidebar ul li.song .left img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover; }
+    .main .sidebar ul li.song .right {
+      padding: 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .main .sidebar ul li.song .right p.title {
+        font-size: 16px;
+        color: #e6e6e6; }
+      .main .sidebar ul li.song .right p.singer {
+        font-size: 11px;
+        color: gray;
+        margin-top: 5px; }
 
 * {
   outline: none;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Rubik', sans-serif; }
 
 html, body {
   width: 100%;
@@ -24,4 +49,4 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #03312E; }
+  background-color: #071022; }

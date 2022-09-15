@@ -1,15 +1,52 @@
 .main{
     .sidebar{
-        background-color: #ffffff13;
-        width: 200px;
+        background-color: #ffffff09;
+        width: 250px;
         height: 100%;
         overflow: auto;
         color: white;
         .header{
             .brand{
-                text-align: center;
+                // text-align: center;
                 padding: 20px 10px;
                 font-weight: bold;
+            }
+        }
+        ul{
+            .active{
+                background-color: #ffffff13;
+            }
+            li.song{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: #ffffff13;
+                }
+                .left{
+                    padding: 10px;
+                    img{
+                        width: 35px;
+                        height: 35px;
+                        object-fit: cover;
+                        // border-radius: 50%;
+                    }
+                }
+                .right{
+                    padding: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p.title{
+                        font-size: 16px;
+                        color: rgb(230, 230, 230);
+                    }
+                    p.singer{
+                        font-size: 11px;
+                        color: gray;
+                        margin-top: 5px;
+                    }
+                }
             }
         }
     }
