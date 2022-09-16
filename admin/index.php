@@ -4,7 +4,7 @@ session_start();
 
 //SECTION Checking if already logged in
 if(isset($_SESSION['userid'])){
-    header('Location: dashboard.php');
+    header('Location: admin/dashboard.php');
 }
 
 //SECTION Initiliazing Variables

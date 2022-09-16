@@ -1,5 +1,4 @@
 <?php
-include_once "./header.php";
 
 //SECTION session started
 session_start();
@@ -21,11 +20,42 @@ if (isset($_SESSION['userid'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard || Sarigama</title>
 
+    <script src="https://kit.fontawesome.com/3b6311e0b4.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="./../css/main.css">
 </head>
 
 <body class="adminDashboard">
-    <?php getHeader("dashboard"); ?>
+    <div class="sidebar">
+        <div class="brand">
+            <i class="fas fa-music"></i>
+            Sarigama
+        </div>
+        <div class="menu">
+            <strong class="title">MENU</strong>
+            <ul>
+                <li>
+                    <i class="fas fa-home"></i>
+                    Home
+                </li>
+                <li>
+                    <i class="fa fa-music"></i>
+                    Artists
+                </li>
+                <li>
+                    <i class="fas fa-camera"></i>
+                    Movies
+                </li>
+                <li>
+                    <i class="fas fa-user"></i>
+                    Users
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+
+    </div>
 </body>
 
 </html>
